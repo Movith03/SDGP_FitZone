@@ -1,0 +1,106 @@
+/* Container styling */
+.allergic-foods-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.allergic-foods-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search Section */
+.allergic-search-section {
+  margin-bottom: 20px;
+}
+
+.allergic-search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.allergic-search-input:focus {
+  border-color: #ff4500;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+/* Checkbox Group */
+.allergic-checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.allergic-food-option {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.allergic-checkbox {
+  margin-right: 10px;
+}
+
+.allergic-food-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.allergic-food-text span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+.allergic-food-icon {
+  font-size: 1.5rem;
+  color: #ff4500;
+}
+
+/* Submit Button */
+.allergic-submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.allergic-submit-btn:hover {
+  background-color: #ff6a00;
+  box-shadow: 0 4px 10px rgba(255, 106, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .allergic-checkbox-group {
+    grid-template-columns: 1fr;
+  }
+
+  .allergic-submit-btn {
+    font-size: 1rem;
+  }
+}

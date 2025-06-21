@@ -1,0 +1,71 @@
+/* targetZones.css */
+
+.target-zones-container {
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  /* Set background color to black */
+  color: #fff; /* Text color */
+}
+
+.target-zones-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.target-image {
+  width: 100%; /* Adjust based on your design */
+  max-width: 600px; /* Set a max width for the image */
+  border-radius: 15px; /* Optional for rounded corners */
+}
+
+.zone {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #00aaff; /* Bright color for the labels */
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.zone:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+.zone-label {
+  font-size: 1rem;
+}
+
+/* Optional: Add lines connecting labels to body parts */
+.zone::after {
+  display: none;
+  content: '';
+  position: absolute;
+  width: 2px; /* Adjust thickness */
+  height: 50px; /* Adjust height as needed */
+  background: #00aaff; /* Color for the connecting line */
+  top: -25px; /* Positioning line */
+  left: 50%; /* Center line */
+  transform: translateX(-50%); /* Centering adjustment */
+  z-index: -1; /* Ensure line is behind the label */
+}
+
+.targetWeiget-btn {
+  padding: 10px;
+  width: 100px;
+  margin-bottom: 20px;
+  background-color: salmon;
+  border: none;
+  border-radius: 10px;
+}
+
+.selected {
+  /* display: none; */
+  background-color: #00aaff; /* Change background color when selected */
+  color: white; /* Change text color */
+}

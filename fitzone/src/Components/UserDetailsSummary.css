@@ -1,0 +1,110 @@
+.summary-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  /* background-color: #f0f4f8; Light background for a modern feel */
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  color: #333; /* Darker text color for better readability */
+  font-family: 'Poppins', sans-serif;
+}
+
+.summary-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #007bff; /* Modern blue color */
+}
+
+.summary-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two columns layout */
+  gap: 20px;
+  font-size: 1rem;
+  color: #555; /* Softer text color for details */
+}
+
+.summary-details p {
+  margin: 10px 0;
+}
+
+.summary-details strong {
+  font-weight: bold;
+  color: #007bff; /* Emphasize labels */
+}
+
+.summary-s-btn {
+  margin-top: 20px;
+  width: 120px;
+  border: none;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.summary-s-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.summary-section {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Light card shadow */
+  margin-bottom: 20px;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it’s on top of other elements */
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-close-btn,
+.modal-submit-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close-btn:hover,
+.modal-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Chart Section */
+.chart-section {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .summary-details {
+    grid-template-columns: 1fr; /* Stack details on smaller screens */
+  }
+}

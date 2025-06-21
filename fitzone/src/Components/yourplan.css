@@ -1,0 +1,59 @@
+.your-plan-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  /* background-color: #1e1e1e; Darker card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.your-plan-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.your-plan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between options */
+}
+
+.your-plan-option {
+  display: flex;
+  align-items: center;
+  /* background-color: #2c2c2c; Option background */
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.your-plan-option:hover {
+  background-color: #3c3c3c; /* Darker on hover */
+}
+
+.your-plan-option.selected {
+  background-color: #00aaff; /* Highlight selected option */
+  color: white; /* White text for selected */
+}
+
+.your-plan-radio {
+  margin-right: 10px; /* Space between radio and label */
+}
+
+.your-plan-submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.your-plan-submit-btn:hover {
+  background-color: #0091db; /* Slightly darker on hover */
+}

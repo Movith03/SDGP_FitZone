@@ -1,0 +1,146 @@
+/* General container styling */
+.weight-age-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Age category grid */
+.age-category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.age-card {
+  background-color: #fff;
+  width: calc(25% - 20px); /* Flex-based width */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.age-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container and styling */
+.age-image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.age-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Label styling */
+.age-label {
+  background: linear-gradient(45deg, #ff4500, #ff6a00);
+  color: white;
+  padding: 12px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.age-card:hover .age-label {
+  background: linear-gradient(45deg, #ff6a00, #ff4500);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .age-category-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .age-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .age-image-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .age-label {
+    font-size: 1rem;
+  }
+
+  .age-card {
+    width: 100%;
+  }
+
+  .age-image-container {
+    height: 180px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it’s on top of other elements */
+}
+
+.modal-content {
+  background-color: white; /* Modal background color */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.error-logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 15px; /* Space between logo and message */
+}
+
+.error-message {
+  color: red; /* Error message color */
+  margin-bottom: 20px; /* Space between message and button */
+}
+
+.modal-close-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff4500; /* Error button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close-btn:hover {
+  background-color: #e63900; /* Darker on hover */
+}

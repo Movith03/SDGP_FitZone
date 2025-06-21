@@ -1,0 +1,114 @@
+/* Container styling */
+.workout-scheduler-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.workout-scheduler-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Section */
+.workout-input-section {
+  margin-bottom: 20px;
+}
+
+.workout-label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.workout-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.workout-input:focus {
+  border-color: #ff4500;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+/* Checkbox Group */
+.workout-checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.workout-day-option {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.workout-checkbox {
+  margin-right: 10px;
+}
+
+.workout-day-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.workout-day-text span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+.workout-day-icon {
+  font-size: 1.5rem;
+  color: #ff4500;
+}
+
+/* Submit Button */
+.workout-submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workout-submit-btn:hover {
+  background-color: #ff6a00;
+  box-shadow: 0 4px 10px rgba(255, 106, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .workout-checkbox-group {
+    grid-template-columns: 1fr;
+  }
+
+  .workout-submit-btn {
+    font-size: 1rem;
+  }
+}
